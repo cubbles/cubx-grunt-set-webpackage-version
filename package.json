@@ -41,6 +41,7 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
+    "cubx-set-webpackage-version": "^1.0.0",
     "inquirer": "^1.0.3",
     "standard": "^8.6.0"
   }
