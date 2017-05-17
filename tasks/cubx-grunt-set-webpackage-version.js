@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         {
           name: 'version',
           type: 'input',
-          message: 'Please type the version to be set to the webpackage (e.g. \'1.0.0\' or \'1.0.0-SNAPSHOT\'):',
+          message: 'Please type the version to be set to the webpackage, e.g. \'1.0.0\' or \'1.0.0-SNAPSHOT\':',
           validate: function (input) {
             if (!pattern.test(input)) {
               throw new Error('Invalid version. Please provide a valid version ' +
