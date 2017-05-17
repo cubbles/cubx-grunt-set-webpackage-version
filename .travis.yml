@@ -11,6 +11,9 @@ script:
 notifications:
   email:
     recipients:
+      - jtrs@incowia.com
+      - pwr@incowia.com
+      - hrbu@incowia.com
       - edwingamboa355@gmail.com
     on_success: change
     on_failure: always
