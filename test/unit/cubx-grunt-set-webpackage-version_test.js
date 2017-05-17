@@ -11,23 +11,11 @@
   var testRootPath;
   var manifestPath;
   var testPath;
-  var proxyquire;
   var initialVersion;
   var stdin;
   before(function () {
-    proxyquire = require('proxyquire');
     stdin = require('mock-stdin').stdin();
     initialVersion = '0.1.0-SNAPSHOT';
-    // eslint-disable-next-line no-unused-vars
-    var WebpackageVersionSetter = proxyquire('../../node_modules/cubx-set-webpackage-version/lib/cubx-set-webpackage-version', {
-      'inquirer': {
-        'prompt': function (config) {
-          return new Promise(function (resolve, reject) {
-            resolve({ version: initialVersion });
-          });
-        }
-      }
-    });
   });
   beforeEach(function () {
     var webpackageName = 'my-webpackage';
